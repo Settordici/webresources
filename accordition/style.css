@@ -1,0 +1,67 @@
+body {
+    background-color: #0a2344;
+    font-family: "rubik", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accordition {
+    width: 800px;
+    margin: 90px auto;
+
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+.accordition .container {
+    position: relative;
+    margin: 10px 10px;
+}
+
+.accordition .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.accordition .label::before {
+    content: "+";
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+
+.accordition .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordition hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+}
+
+.accordition .container.active .content {
+    height: 150px;
+}
+
+.accordition .container.active .label::before {
+    content: "-";
+    font-size: 30px;
+}
