@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- WIP, unica cosa importante è JS-->
+<html>
+    <head>
+         <link href="style.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="accordition-body">
+            <div class="accordition">
+                <h1>Title</h1>
+                <hr>
+                <div class="container">
+                    <div class="label">A label</div>
+                    <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in tellus nunc. Morbi eu egestas eros. Suspendisse lacinia sed nisi et vehicula. Quisque accumsan euismod metus id varius. Integer suscipit fermentum neque, et pretium arcu laoreet nec. Maecenas velit purus, facilisis eu arcu id, maximus semper arcu. Etiam ac massa auctor, ornare nibh vitae, rhoncus elit. Pellentesque eget nibh velit. Nam ac ex vel ex cursus lacinia. Aliquam tempus aliquam lacus et tincidunt. In diam erat, pulvinar vel maximus at, imperdiet id diam. Vestibulum volutpat dolor id erat dictum, ut egestas nisi iaculis. Phasellus bibendum lorem at odio tincidunt, quis volutpat tellus sagittis. </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <script>
+        const accordition = document.getElementsByClassName("container");
+        for(i=0; i<accordition.length; i++) {
+            accordition[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+
+</html>
